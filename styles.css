@@ -2,7 +2,7 @@
 
 
 :root{
-    --primary-color: #3b82f6;
+    --primary-color: #fbbf24;
     --width-break: 600px;
 }
 
@@ -10,13 +10,28 @@ body{
     font-family: 'Cedarville Cursive', 
     cursive;
     margin: 0px;
-
 }
+
 
 .main{
     margin: auto;
     padding: 1rem;
     max-width: var(--width-break);
+}
+
+.image{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    width: 100%;
+    z-index: -10;
+}
+
+img{
+    max-width: 100%;
+    height: 800px;
+    filter: blur(10px);
 }
 
 .navigation{
@@ -26,40 +41,40 @@ body{
 }
 
 textarea{
+
+    font-size: large;
+    font-family: inherit;
+    border: none;
     margin-top : 2rem;
     padding-top: 1rem;
     display: block;
     width: 100%;
     height: 20vh;
-    font-size: large;
-    font-family: inherit;
 }
 
 button{
     box-sizing: border-box;
-    background-color: whitesmoke;
-    border-color: var(--primary-color);
+    background-color: #fde68a;
+    border:none;
     margin: 1rem 0rem;
     font-size: large;
     font-family: inherit;
-    width: 50%;
+    width: 30%;
+    padding: 0;
 }
 
 #output{
     box-sizing: border-box;
     width: 100%;
-    min-height: 10vh;
+    min-height: 20vh;
     max-height: 20vh;
     overflow: scroll;
     border: 1px solid black;
 }
 
 footer {
-    position: fixed;
     bottom: 0;
-    height: 20%;
     width: 100%;
-    padding: 1rem;
     background-color: var(--primary-color);
     text-align: center;
     box-sizing: border-box;
