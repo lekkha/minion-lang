@@ -54,7 +54,7 @@ textarea{
 
 button{
     box-sizing: border-box;
-    background-color: #fde68a;
+    background-color: var(--primary-color);
     border:none;
     margin: 1rem 0rem;
     font-size: large;
